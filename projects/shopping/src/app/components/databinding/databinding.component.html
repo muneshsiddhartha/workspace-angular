@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <h2>Product details</h2>
+    <dl>
+        <dt>title</dt>
+        <dd>{{Product.title}}</dd>
+        <dt>Price</dt>
+        <dd>Product.price</dd>
+        <dt>Preview</dt>
+        <dd>
+            <img src="{{Product.image}}" width="100" height="100">
+        </dd>
+        <dt> rating</dt>
+        <dd> <span class="bi bi-star-fill text-success"> </span> {{Product.rating.rate}} [{{Product.rating.count}}]</dd>
+        <dt>Stock</dt>
+        <dd><input type="checkbox" [checked]="Stock"></dd>
+        
+    </dl>
+    {{Product.description}}
+</div>
