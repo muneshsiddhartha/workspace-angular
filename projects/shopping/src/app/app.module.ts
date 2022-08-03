@@ -15,6 +15,8 @@ import { WayBindingComponent } from './components/wayBinding/wayBinding.componen
 import { IfdemoComponent } from './components/ifdemo/ifdemo.component';
 import { FordemoComponent } from './components/fordemo/fordemo.component';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
+import { ForpropertiesComponent } from './components/forproperties/forproperties.component';
+
 
 
 
@@ -33,6 +35,8 @@ import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.co
     IfdemoComponent,
     FordemoComponent,
     ShoppingcartComponent,
+    ForpropertiesComponent,
+    
     
     
   
@@ -42,7 +46,7 @@ import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.co
     FormsModule
   ],
   providers: [],
-  bootstrap: [ShoppingcartComponent]
+  bootstrap: [ForpropertiesComponent]
 })
 export class AppModule { 
 
