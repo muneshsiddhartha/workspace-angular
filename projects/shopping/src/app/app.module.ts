@@ -14,6 +14,7 @@ import { DatabindingComponent } from './components/databinding/databinding.compo
 import { WayBindingComponent } from './components/wayBinding/wayBinding.component';
 import { IfdemoComponent } from './components/ifdemo/ifdemo.component';
 import { FordemoComponent } from './components/fordemo/fordemo.component';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 
 
 
@@ -31,6 +32,7 @@ import { FordemoComponent } from './components/fordemo/fordemo.component';
     WayBindingComponent,
     IfdemoComponent,
     FordemoComponent,
+    ShoppingcartComponent,
     
     
   
@@ -40,7 +42,7 @@ import { FordemoComponent } from './components/fordemo/fordemo.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [FordemoComponent]
+  bootstrap: [ShoppingcartComponent]
 })
 export class AppModule { 
 
