@@ -1,0 +1,34 @@
+<div class="container-fluid mt-3">
+    
+    <header>
+        <img (mouseover)="Banner2()" (mouseout)="Banner1()" [src]="Banner" class="w-100">
+    </header>
+
+    <div>
+        <img (touchstart)="ProductDetails($event)" name="shoe" src="assets/shoe.png" width="100" height="100">
+        <img (touchstart)="ProductDetails($event)" name="jacket" src="assets/jacket.jpg" width="100" height="100">
+        <h1>{{Msg}}</h1>
+    </div>
+
+    <h2>Register User</h2>
+    <dl>
+        <dt>User Id</dt>
+        <dd><input (blur)="HideUserMessage()"  (keyup)="VerifyUserId($event)" type="text"></dd>
+        <dd  [ngClass]="{'text-success':IsUserValid, 'text-danger':IsUserInvalid}">{{UserMessage}}</dd>
+        <dt>Password</dt>
+        <dd><input (keypress)="VerifyCaps($event)" type="password"></dd>
+        <dd *ngIf="ShowCapsWarn" class="text-warning">
+            <span class="bi bi-exclamation-triangle-fill "></span> Caps ON
+        </dd>
+        <dt>Select City</dt>
+        <dd>
+            <select (change)="VerifyCity($event)">
+                <option value="-1">Select Your City</option>
+                <option value="delhi">Delhi</option>
+                <option value="hyd">Hyd</option>
+            </select>
+        </dd>
+        <dd *ngIf="ShowCityError" class="text-danger">Please Select Your City</dd>
+    </dl>
+</div>
+  

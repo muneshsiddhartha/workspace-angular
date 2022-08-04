@@ -16,6 +16,7 @@ import { IfdemoComponent } from './components/ifdemo/ifdemo.component';
 import { FordemoComponent } from './components/fordemo/fordemo.component';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 import { ForpropertiesComponent } from './components/forproperties/forproperties.component';
+import { EventdemoComponent } from './components/eventdemo/eventdemo.component';
 
 
 
@@ -36,6 +37,7 @@ import { ForpropertiesComponent } from './components/forproperties/forproperties
     FordemoComponent,
     ShoppingcartComponent,
     ForpropertiesComponent,
+    EventdemoComponent,
     
     
     
@@ -46,7 +48,7 @@ import { ForpropertiesComponent } from './components/forproperties/forproperties
     FormsModule
   ],
   providers: [],
-  bootstrap: [ForpropertiesComponent]
+  bootstrap: [EventdemoComponent]
 })
 export class AppModule { 
 
